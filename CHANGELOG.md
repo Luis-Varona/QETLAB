@@ -2,6 +2,9 @@
 All notable changes to QETLAB will be documented in this file.
 
 ## Changes since v1.0
+### Added
+- CITATION.bib: For citing QETLAB via BibTeX.
+- 
 ### Changed
 - helpers/sk_iterate: Changed padarray to pad_array so that this function does not rely on MATLAB's image processing toolbox when specifying an initial vector v0.
 
