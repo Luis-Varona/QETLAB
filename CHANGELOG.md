@@ -1,6 +1,7 @@
 # Change Log
 All notable changes to QETLAB will be documented in this file.
 
+## CHANGES SINCE v1.0 WAS RELEASED ON 2025-07-22
 ### Added
 - CITATION.bib: For citing QETLAB via BibTeX.
 - 
