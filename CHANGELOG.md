@@ -3,9 +3,12 @@ All notable changes to QETLAB will be documented in this file.
 
 ## CHANGES SINCE v1.0 WAS RELEASED ON 2025-07-22
 ### Added
+- AdditiveCompoundMatrix: Computes the r-th additive compound matrix of a given square matrix (similar to how CompoundMatrix computes the multiplicative compound matrix).
+- KroneckerSum: Computes the Kronecker sum of two or more matrices (similar to how Tensor computes the Kronecker product of two or more matrices).
 - CITATION.bib: For citing QETLAB via BibTeX.
-- 
+
 ### Changed
+- CompoundMatrix: Added support for symbolic matrices, and made changes to speed it up.
 - helpers/sk_iterate: Changed padarray to pad_array so that this function does not rely on MATLAB's image processing toolbox when specifying an initial vector v0.
 - README.md: Update Zenodo badge to v0.9's submission
 
@@ -35,7 +38,7 @@ All notable changes to QETLAB will be documented in this file.
 - helpers/exp2ind: Looks up a monomial's lexicographical index based on a list of exponents.
 - helpers/fc2fp: Converts a Bell functional or behaviour in full correlator notation and converts it to full probability notation. Used in BellInequalityMax.m.
 - helpers/fc2cg: Converts a Bell functional or behaviour in full correlator notation and converts it to Collins-Gisin notation. Used in BellInequalityMax.m.
-- helpers/ffl: Produces the coefficients of the Fortnow-Feige-Lov�sz nonlocal game. Can be used as a test case for BellInequalityMax.
+- helpers/ffl: Produces the coefficients of the Fortnow-Feige-Lovasz nonlocal game. Can be used as a test case for BellInequalityMax.
 - helpers/fp2fc: Converts a Bell functional or behaviour in full probability notation and converts it to full correlator notation. Used in BellInequalityMax.m.
 - helpers/fp2cg: Converts a Bell functional or behaviour in full probability notation and converts it to Collins-Gisin notation. Used in BellInequalityMax.m.
 - helpers/has_band_k_ordering: Determines whether a matrix has bandwidth ≤ k up to symmetric permutation. Used as a new helper check in IskIncoherent.m.
